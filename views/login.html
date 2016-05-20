@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<form action="/login" method="post" class="pure-form pure-form-stacked">
+  <fieldset>
+    <div class="upper-box">
+      <div class="pure-control-group">
+        <label class="labels" for="name">Username:</label>
+
+        <div class="input-fields">
+          <input class="pure-input-1 input-fields" id="name" type="text" placeholder="Hint: user1" name="username"/>
+        </div>
+      </div>
+      <div class="pure-control-group">
+        <label class="labels" for="password">Password:</label>
+
+        <div class="input-fields">
+          <input class="pure-input-1 input-fields" id="password" type="password" placeholder="Hint: 1234"
+                 name="password"/>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-box">
+      <div class="pure-controls sign-in-button">
+        <button type="submit" value="Submit" class="pure-button pure-button-primary">Sign in</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+
+</body>
+</html>
