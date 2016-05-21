@@ -7,13 +7,15 @@ var
   jasmine = require('gulp-jasmine'),
   reporters = require('jasmine-reporters'),
   coffee = require('gulp-coffee'),
-  nodemon = require('gulp-nodemon');
+  nodemon = require('gulp-nodemon'),
+  exit = require('gulp-exit');
 
 gulp.task('jasm', function(){
   return gulp.src('src/**/*Spec.{js,coffee}')
     .pipe(jasmine({
       reporter: new reporters.TerminalReporter()
-    }));
+    }))
+    .pipe(exit());
 });
 
 gulp.task('watchtest', function(){
@@ -43,6 +45,6 @@ gulp.task('start', function () {
   })
 })
 
-gulp.task('test', ['jasm', 'watchtest']);
+gulp.task('test', ['jasm']);
 
 gulp.task('default', ['coffee', 'start','watch']);
