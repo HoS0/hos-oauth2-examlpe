@@ -1,5 +1,5 @@
 {
-  "name": "ali khoramshahi",
+  "name": "hos-oauth2-examlpe",
   "version": "0.0.1",
   "description": "an example of full implementation of Oauth2 within HoS components",
   "main": "index.js",
